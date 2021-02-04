@@ -14,68 +14,78 @@ var inStock = 10;
 // Reassign (not initialize) your "inStock" variable from above. We got a new shipment! Use a built in math operator to make
 // the inStock count double what it currently is.
 var reStock = inStock * 2;
-console.log(reStock);
+inStock = reStock;
 
 // Reassign (not initialize) your "inStock" variable from above. You got hungry and needed a snack!
 // Use a built in math operator to decrement the inStock count by 1.
-var oopsNeedASnack = reStock--;
+var oopsNeedASnack = inStock -=1;
 console.log(oopsNeedASnack);
-// this seems to work correctly in the console, but for some reason isn't updating in runJS
+// forgot to switch to a new branch - switched to -b "Feature/Iteration0"
 
-// Initialize a new variable "isFavorite", and assign it to a boolean value indicating
-// if the food you chose is your favorite food or not
+// Initialize a new variable "isFavorite", and assign it to a boolean value indicating if the food you chose is your favorite food or not
+var isFavorite = true;
 
-
-
-// Create a new variable named "shouldOrderMore", and use a comparison operator to
-// assign a boolean value to this variable. If "inStock" is less than 20, the
-// variable should be true, otherwise it should be false. You MUST use a
+// √ Create a new variable named "shouldOrderMore", and use a comparison operator to
+// assign a boolean value to this variable. √ If "inStock" is less than 20, the
+// variable should be true, √ otherwise it should be false. √ You MUST use a
 // comparison operator.
+var shouldOrderMore = false;
 
-
+if (inStock < 20) {
+  shouldOrderMore = true;
+} else {
+  ShouldOrderMore = false;
+};
 
 //------------------------- Conditionals -------------------------//
 
+// √ Express the following in code: √ If the variable "stockCount" is greater or equal to 1, √ log the statement 'I'm going to eat some [food]!', √ otherwise, log the statement 'We need to get some more [food].'
+if (inStock >= 1) {
+  console.log(`I\'m going to eat some ${food}!`);
+} else {
+  console.log(`We need to get some more ${food}.`);
+};
 
-
-// Express the following in code: If the variable "stockCount" is greater or equal to 1, log
-// the statement 'I'm going to eat some [food]!', otherwise, log the statement
-// 'We need to get some more [food].'
-
-
-
-// Express the following in code: If the variable "isFavorite" is true,
-// log the statement 'My favorite food is [food]!'. Otherwise, log the
-// statement 'I recently ate [food]'. In either case, the value stored in
+// √ Express the following in code: √ If the variable "isFavorite" is true,
+// log the statement 'My favorite food is [food]!'. √ Otherwise, log the
+// statement 'I recently ate [food]'. √ In either case, the value stored in
 // the "food" variable should be included in the logged statement.
-
-
+if (isFavorite) {
+  console.log(`My favorite food is ${food}!`);
+} else {
+  console.log(`I recently ate ${food}.`);
+};
 
 //------------------------- Arrays -------------------------//
 
-
-// Create a new variable "vegetables" and assign it to an Array of 5 different
-// vegetables, represented by their names as Strings.
-
+// √ Create a new variable "vegetables" and assign it to an Array of 5 different
+// vegetables, √ represented by their names as Strings.
+var vegetables = ['Zucchini', 'Yellow squash', 'Red onion', 'Garlic', 'Corn'];
 
 // Write the code to access the 3rd element of the Array, using bracket
 // notation.
+vegetables[2];
 
-
-// Create a new variable "fruits" and assign it to an Array of 7
+// √ Create a new variable "fruits" and assign it to an Array of 7
 // different fruits.
-
+var fruits = ['Starfruit', 'Kiwi', 'Mango', 'Passion fruit', 'Pineapple', 'Coconut', 'Kumquat'];
 
 // Write the code to access the 5th element of the array, using bracket notation.
-
+fruits[3];
 
 //------------------------- Objects -------------------------//
 
-// Create a new variable called "groceryStore" and assign to it an object literal with two
-// keys: name, and isOpen. The value for name should the string 'King Soopers' (or your favorite grocery store), and
-// the value for isOpen should be true. Which other key value pairs would make sense to add to this object?
+// √ Create a new variable called "groceryStore" and assign to it an object literal with two keys: name, and isOpen. √ The value for name should be the string 'King Soopers' (or your favorite grocery store), √ and the value for isOpen should be true. Which other key value pairs would make sense to add to this object?
+var groceryStore = {
+  name: 'King Soopers',
+  isOpen: true,
+  hasDeli: true,
+  occupancy: 200,
+  managerOnSite: true,
+};
 
+// grocery store properties: name, hours, location, deli, photo, floral, various depts..., acceptsCoupons, etc.
 
-
-// Write the code to add the key of location, with the value of 'Denver, Colorado'. Use dot
-// notation to do this. DO NOT modify your code from above.
+// √ Write the code to add the key of location, √ with the value of 'Denver, Colorado'. √ Use dot notation to do this. √ DO NOT modify your code from above.
+groceryStore.location = 'Denver, Colorado';
+groceryStore;
