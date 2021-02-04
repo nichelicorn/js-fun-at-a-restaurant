@@ -17,9 +17,15 @@ function createMenuItem(name, price, type) {
 };
 
 function addIngredients(ingr, ingredients) {
-  ingredients.push(ingr);
   console.log(ingredients.length, ingredients);
-  return ingredients;
+
+  if (ingredients.includes(ingr)) {
+    return ingredients;
+  } else {
+    ingredients.push(ingr);
+    return ingredients;
+  };
+
   // as written, the console.log is returning 1 ['cheese'] - this appears to match the expected output on the test, but it is not being recognized as correct
   // AssertionError: expected 0 to equal 1; where is the 0 coming from? my console.log is showing a value of 1 as the length
   // was missing a parameter - removed variable to hold empty array
