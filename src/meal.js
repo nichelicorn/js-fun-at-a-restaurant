@@ -33,11 +33,16 @@ function formatPrice(price) {
   return `$${price}`;
 };
 
+function decreasePrice(price) {
+  // console.log(price, price - (price * 0.10));
+  return price - (price * 0.10);
+};
+
 module.exports = {
   nameMenuItem,
   createMenuItem,
   addIngredients,
   formatPrice,
-  // decreasePrice,
+  decreasePrice,
   // createRecipe
 };
