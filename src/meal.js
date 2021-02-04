@@ -17,8 +17,6 @@ function createMenuItem(name, price, type) {
 };
 
 function addIngredients(ingr, ingredients) {
-  console.log(ingredients.length, ingredients);
-
   if (ingredients.includes(ingr)) {
     return ingredients;
   } else {
@@ -31,11 +29,15 @@ function addIngredients(ingr, ingredients) {
   // was missing a parameter - removed variable to hold empty array
 };
 
+function formatPrice(price) {
+  return `$${price}`;
+};
+
 module.exports = {
   nameMenuItem,
   createMenuItem,
   addIngredients,
-  // formatPrice,
+  formatPrice,
   // decreasePrice,
   // createRecipe
 };

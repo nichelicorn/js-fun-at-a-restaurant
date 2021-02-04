@@ -85,11 +85,11 @@ describe("meal.js", function() {
   })
 
   describe("formatPrice", function() {
-    it.skip("should be a function", function () {
+    it("should be a function", function () {
       assert.isFunction(formatPrice);
     });
 
-    it.skip("should add a dollar sign in front of the price", function () {
+    it("should add a dollar sign in front of the price", function () {
       var menuItemName = nameMenuItem("French Toast");
       var menuItem = createMenuItem(menuItemName, 10.99, "breakfast");
       var initialPrice = menuItem.price;
