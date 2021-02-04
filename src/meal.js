@@ -38,11 +38,15 @@ function decreasePrice(price) {
   return price - (price * 0.10);
 };
 
+function createRecipe() {
+
+};
+
 module.exports = {
   nameMenuItem,
   createMenuItem,
   addIngredients,
   formatPrice,
   decreasePrice,
-  // createRecipe
+  createRecipe
 };
