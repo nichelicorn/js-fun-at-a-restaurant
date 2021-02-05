@@ -37,12 +37,12 @@ problem.
 ### 1: Complete the **meal** tests
   - For the rest of the iterations, you will be working to build out some
     js functionality, using a test suite as your guide.  
-  - Start with the `meal.js` file.  
-    - Unskip the first test in `test/meal-test.js`
-    - Run `npm test test/meal-test.js`  
-    - Read the error messages CAREFULLY!  
-    - Make the test pass.
-  - Before moving on to the next iteration, take time to refactor your
+  - √ Start with the `meal.js` file.  
+    - √ Unskip the first test in `test/meal-test.js`
+    - √ Run `npm test test/meal-test.js`  
+    - √ Read the error messages CAREFULLY!  
+    - √ Make the test pass.
+  - √ Before moving on to the next iteration, take time to refactor your
     solutions. Is this the best approach to solving the problem? Is there a
     different way you could make the tests pass?  
 
