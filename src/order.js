@@ -14,9 +14,9 @@ function takeOrder(order, array) {
 // array should not be able to hold more than three Objects √
 // if array is = 3, do nothing; else push the new order to the array √
 
-function refundOrder(orderNum, array) {
+function refundOrder(orderNumber, array) {
   if (array.length >= 3) {
-    array.shift();
+    array.splice(orderNumber, 1);
     console.log(array);
     return;
   }
@@ -31,7 +31,11 @@ function refundOrder(orderNum, array) {
 // https://appdividend.com/2020/07/28/javascript-remove-first-element-from-array/ this article recommends the `array.shift()` and `array.splice()` methods
 // `array.shift()` removes the first element from an array {the element at the zeroeth index} and returns the removed element; this method changes the length of an array; this method shifts everything to the left; does not take in any parameters; {this sounds like what I'm looking for};
 // `array.splice` appears to have a more targeted effect, and that doesn't seem to be what is required in this solution
-
+// `yep`, (as we know from Amy, this is a correc JavaScript term) `array.shift()` was only functional for the second test...time to look into ... array.splice() ! ! ! 🤓
+// `array.splice()` changes the contents of an array by removing or replacing existing elements and/or adding new element/s
+// syntax: var fjdsk = [1, 2, 3];
+//         fjdsk.splice(0, 1);
+//         console.log(fjdsk) will return (2) [2, 3]
 
 module.exports = {
   takeOrder,
