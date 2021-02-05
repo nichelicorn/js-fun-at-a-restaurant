@@ -27,6 +27,9 @@ function refundOrder(orderNum, array) {
 // google time: how to remove the first element from an array?
 // just remembered Hannah dropped a note in Slack that it could be helpful to review the array.Prototypes lesson that is in Monday's homework...
 // I'm going to try the struggle and if I can't get through this I'll go to that lesson 🧠
+// https://appdividend.com/2020/07/28/javascript-remove-first-element-from-array/ this article recommends the `array.shift()` and `array.splice()` methods
+// `array.shift()` removes the first element from an array {the element at the zeroeth index} and returns the removed element; this method changes the length of an array; this method shifts everything to the left; does not take in any parameters; {this sounds like what I'm looking for};
+// `array.splice` appears to have a more targeted effect, and that doesn't seem to be what is required in this solution
 
 
 module.exports = {
