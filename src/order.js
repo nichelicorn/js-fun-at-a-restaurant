@@ -15,7 +15,8 @@ function takeOrder(order, array) {
 // if array is = 3, do nothing; else push the new order to the array √
 
 function refundOrder(orderNum, array) {
-  if (array.length >= 2) {
+  if (array.length >= 3) {
+    array.shift();
     console.log(array);
     return;
   }
