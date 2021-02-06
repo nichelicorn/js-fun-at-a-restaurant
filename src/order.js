@@ -14,11 +14,21 @@ function takeOrder(order, array) {
 // array should not be able to hold more than three Objects √
 // if array is = 3, do nothing; else push the new order to the array √
 
-function refundOrder(orderNumber, array) {
+function refundOrder(num, array) {
   for (var i = 0; i < array.length; i++) {
     // i want this function to remove the orderNumber provided as an argument in the function call
-    
-  }
+    // i need to access the property orderNumber that is located in the provided order objects
+    // how to access object within an array?
+    // array.objectName.propertyKey
+    // console.log('targeted order number and item:', array[i].orderNumber, array[i].item);
+    if (array[i].orderNumber === num) {
+      var newArray = array.splice(num, 1);
+      console.log('spliced array:', newArray);
+      return newArray;
+    } else {
+      return array;
+    };
+  };
 };
 
   // I WANT TO TAKE IN TWO ARGUMENTS
