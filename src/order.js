@@ -16,11 +16,11 @@ function takeOrder(order, array) {
 
 function refundOrder(orderNumber, array) {
   for (var i = 0; i < array.length; i++) {
-    if (array[i].orderNumber === orderNumber) {
-      array.splice(array[i], 1);
-    };
-  };
+    // i want this function to remove the orderNumber provided as an argument in the function call
+    
+  }
 };
+
   // I WANT TO TAKE IN TWO ARGUMENTS
   // the function should REMOVE AN ORDER BY ORDER NUMBER
   // THE FIRST PARAMETER IS THE ORDER NUMBER
