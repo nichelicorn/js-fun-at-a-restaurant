@@ -157,7 +157,7 @@ describe("order.js", function() {
       assert.deepEqual(deliveryOrders, [order2, order3])
     });
 
-    it("should remove a different order by order number", function () {
+    it.skip("should remove a different order by order number", function () {
       var order1 = {
         orderNumber: 1,
         item: "burger",

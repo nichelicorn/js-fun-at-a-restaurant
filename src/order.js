@@ -15,12 +15,25 @@ function takeOrder(order, array) {
 // if array is = 3, do nothing; else push the new order to the array √
 
 function refundOrder(orderNumber, array) {
-  if (array.length >= 3) {
-    array.splice(orderNumber, 1);
-    console.log(array);
-    return;
-  }
+  for (var i = 0; i < array.length; i++) {
+    if (array[i].orderNumber === orderNumber) {
+      array.splice(array[i], 1);
+    };
+  };
 };
+  // I WANT TO TAKE IN TWO ARGUMENTS
+  // the function should REMOVE AN ORDER BY ORDER NUMBER
+  // THE FIRST PARAMETER IS THE ORDER NUMBER
+  // THE SECOND PARAMETER IS THE ARRAY NAME (in this case, the array is provided in the test file);
+
+  // maybe I didn't read this correctly - going back to test number 2
+  // maybe an if statement is the wrong way to think about this. This problem is working with an array of objects, and it may be easiest to use a for loop in this situation
+  // if (array.length >= 3) {
+  //   var orderNum =
+  //   array.splice(orderNumber, 1);
+  //   console.log(array);
+  //   return;
+  // }
 // SHOULD REMOVE AN ORDER BY ORDER NUMBER
 // : expected 3 to equal 2; this is expecting that once deliveryOrders has 3 orders, the first order should be removed? I think this because when the function is called on line 154 of the test, it includes a number that corresponds to the first order. Next, on line 157, the `assert.deepEqual` statement is returing the array of deliveryOrders, and it is displaying a value of just var order2 && order3
 // When the function is invoked, 2 arguments are passed through (will want to set up two parameters)
