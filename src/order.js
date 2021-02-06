@@ -15,21 +15,22 @@ function takeOrder(order, array) {
 // if array is = 3, do nothing; else push the new order to the array √
 
 function refundOrder(num, array) {
+  array.splice(0, 1)
 
   // AM I MAKING THIS TOO HARD?????
-  for (var i = 0; i < array.length; i++) {
-    // console.log('array before if:', array);
-    if (array[i].orderNumber === num) {
-      var newArray = array.slice(num);
-      // console.log('original array:', array);
-      // console.log('sliced array:', newArray);
-      array = newArray;
-      console.log('array after reassignment:', array);
-      return array;
-    // } else {
-    //   return array;
-    };
-  };
+  // for (var i = 0; i < array.length; i++) {
+  //   // console.log('array before if:', array);
+  //   if (array[i].orderNumber === num) {
+  //     var newArray = array.slice(num);
+  //     // console.log('original array:', array);
+  //     // console.log('sliced array:', newArray);
+  //     array = newArray;
+  //     console.log('array after reassignment:', array);
+  //     return array;
+  //   // } else {
+  //   //   return array;
+  //   };
+  // };
 };
 // i want this function to remove the orderNumber provided as an argument in the function call
 // i need to access the property orderNumber that is located in the provided order objects
