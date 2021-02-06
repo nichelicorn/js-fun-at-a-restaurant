@@ -15,8 +15,8 @@ function takeOrder(order, array) {
 // if array is = 3, do nothing; else push the new order to the array √
 
 function refundOrder(num, array) {
-  array.splice(0, 1)
-
+  array.splice(num - 1, 1)
+  // console.log('spliced array:', array);
   // AM I MAKING THIS TOO HARD?????
   // for (var i = 0; i < array.length; i++) {
   //   // console.log('array before if:', array);
