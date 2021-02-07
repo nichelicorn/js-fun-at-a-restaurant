@@ -68,9 +68,19 @@ function refundOrder(num, array) {
 //         fjdsk.splice(0, 1);
 //         console.log(fjdsk) will return (2) [2, 3]
 
+function listItems(array) {
+  var orderList = [];
+  for (var i = 0; i < array.length; i++) {
+    orderList.push(array[i].item);
+  }
+  // console.log('List of orders:', orderList.join(', '));
+  return orderList.join(', ');
+};
+
+
 module.exports = {
   takeOrder,
   refundOrder,
-  // listItems,
+  listItems,
   // searchOrder
 }
