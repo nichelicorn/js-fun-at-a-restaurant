@@ -25,8 +25,16 @@ function removeMenuItem(name, itemName, type) {
   // the test is creating three new menu items, one being assigned to each array
   // the test is then calling removeMenuItem() and requiring that the breakfast item is removed
   // remove breakfast item
-  name.menus.breakfast.splice(itemName);
-  return `No one is eating our Bacon and Eggs Pizza - it has been removed from the breakfast menu!`
+  if (type === 'breakfast') {
+    name.menus.breakfast.splice(itemName);
+    return `No one is eating our ${itemName} - it has been removed from the ${type} menu!`;
+  } else if (type === 'lunch') {
+    name.menus.lunch.splice(itemName);
+    return `No one is eating our ${itemName} - it has been removed from the ${type} menu!`;
+  } else if (type === 'dinner') {
+    name.menus.dinner.splice(itemName);
+    return `No one is eating our ${itemName} - it has been removed from the ${type} menu!`;
+  }
 };
 
 module.exports = {
