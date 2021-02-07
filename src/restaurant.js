@@ -9,8 +9,12 @@ function createRestaurant(name) {
   }
 };
 
+function addMenuItem() {
+
+};
+
 module.exports = {
   createRestaurant,
-  // addMenuItem,
+  addMenuItem,
   // removeMenuItem
 }
