@@ -51,7 +51,7 @@ describe("restaurant.js", function() {
         price: "12.49",
         type: "lunch"
       };
-
+      
       addMenuItem(pizzaRestaurant, bbqPizza);
 
       assert.equal(pizzaRestaurant.menus.lunch[0], bbqPizza);

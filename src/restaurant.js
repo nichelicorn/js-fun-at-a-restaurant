@@ -10,21 +10,28 @@ function createRestaurant(name) {
 };
 
 function addMenuItem(name, item) {
-  var menu =  {
-    name: name,
-    menus: {
-      breakfast: [],
-      lunch: {
-        name: item,
-        price: 0,
-        type: '',
-      },
-      dinner: [],
-    },
-  };
+  // console.log('this is the name param:', name);
+  // console.log('this is the item param:', item);
+  name.menus.lunch.push(item);
+  // console.log('this is the pushed name:', name)
+  // console.log('this is the expected output:', pizzaRestaurant.menus.lunch[0]);
 
-  console.log('this is a lunch item:', menu.menus.lunch);
-  return menu;
+  // how do I take the item and put it in the name??
+
+
+  // var menu =  {
+  //   name: name,
+  //   menus: {
+  //     breakfast: [],
+  //     lunch: {
+  //       item
+  //     },
+  //     dinner: [],
+  //   },
+  // };
+
+  // console.log('this is a lunch item:', menu.menus.lunch);
+  // return menu;
 };
 
 module.exports = {
