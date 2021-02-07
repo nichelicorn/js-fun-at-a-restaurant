@@ -20,11 +20,17 @@ function addMenuItem(name, item) {
 };
 
 function removeMenuItem(name, itemName, type) {
-  // remove an item from a menu property
-  // parameters are name to call createRestaurant(); itemName is provided as a string; type is provided as a string
-  // the test is creating three new menu items, one being assigned to each array
-  // the test is then calling removeMenuItem() and requiring that the breakfast item is removed
-  // remove breakfast item
+  // console.log('this is the name:', name);
+  // console.log('this is the itemName:', itemName);
+  // console.log('this is the type:', type);
+  // console.log('this is the chain:', name.menus);
+  // console.log('the chain can\'t pick up the type:', name.menus.includes(type));
+
+  // this ⤵ logic seems correct - this will make the function pass tests 1 and 4, but now fails 2 and 3
+  if (!type.includes(itemName)) {
+    return `Sorry, we don't sell ${itemName}, try adding a new recipe!`
+  };
+
   if (type === 'breakfast') {
     name.menus.breakfast.splice(itemName);
     return `No one is eating our ${itemName} - it has been removed from the ${type} menu!`;
@@ -36,6 +42,7 @@ function removeMenuItem(name, itemName, type) {
     return `No one is eating our ${itemName} - it has been removed from the ${type} menu!`;
   }
 };
+
 
 module.exports = {
   createRestaurant,
