@@ -47,16 +47,16 @@ problem.
     different way you could make the tests pass?  
 
 ### √ 2: Complete the **order** tests
-  - Unskip the first test in `test/order-test.js`, and get to work passing the tests
-  - Run `npm test test/order-test.js`
-  - Before moving on to the next iteration, take time to refactor your
+  - √ Unskip the first test in `test/order-test.js`, and get to work passing the tests
+  - √ Run `npm test test/order-test.js`
+  - √ Before moving on to the next iteration, take time to refactor your
     solutions. Is this the best approach to solving the problem? Is there a
     different way you could make the tests pass?  
 
-### 3: Complete the **restaurant** tests
-  - Unskip the first test in `test/restaurant-test.js` and get to work passing the tests
-  - Run `npm test test/restaurant-test.js`  
-  - Before moving on to the next iteration, take time to refactor your
+### √ 3: Complete the **restaurant** tests
+  - √ Unskip the first test in `test/restaurant-test.js` and get to work passing the tests
+  - √ Run `npm test test/restaurant-test.js`  
+  - √ Before moving on to the next iteration, take time to refactor your
     solutions. Is this the best approach to solving the problem? Is there a
     different way you could make the tests pass?  
 
