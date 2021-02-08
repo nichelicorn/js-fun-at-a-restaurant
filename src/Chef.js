@@ -11,6 +11,12 @@ class Chef {
       return `Hello, ${cust}!`;
     }
   }
+
+  checkForFood(item) {
+    if (item) {
+      return `Yes, we're serving ${item.name} today!`;
+    }
+  }
 };
 
 module.exports = Chef;
