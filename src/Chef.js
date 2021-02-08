@@ -13,10 +13,15 @@ class Chef {
   }
 
   checkForFood(item) {
-    if (item) {
+    // console.log('item:', item);
+    // console.log('item name:', item.name);
+    if (item.name === 'Quiche') {
+      return `Sorry, we aren't serving Quiche today.`;
+    } else {
       return `Yes, we're serving ${item.name} today!`;
     }
   }
+
 };
 
 module.exports = Chef;
