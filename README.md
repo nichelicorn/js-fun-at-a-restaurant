@@ -33,6 +33,6 @@ I enjoyed this project overall. It was interesting to work through the tests and
 
 #### Credits
 - [Nichele D](https://github.com/nichelicorn)
-- This project was created for [Turing School of Software and Design](https://turing.io/)
 
+###### This project was created for [Turing School of Software and Design](https://turing.io/)
 ###### 7FEBRUARY2021
